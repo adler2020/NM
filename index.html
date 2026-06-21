@@ -1,118 +1,564 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)https://vejje6p5shv6c.kimi.page/ -->
-<html lang="ar" dir="rtl" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ثانوية نور المعارف الخاصة - كفر شمس. مؤسسة تعليمية رائدة للمرحلة الثانوية بفرعيها العلمي والأدبي">
-    <title>ثانوية نور المعارف الخاصة | كفر شمس</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./index_files/css2" rel="stylesheet">
-    <script type="module" crossorigin="" src="./index_files/index-DHQN8IuM.js.download"></script>
-    <link rel="stylesheet" crossorigin="" href="./index_files/index-BGf4PlXj.css">
-  <script src="./index_files/sdk-seed.js.download" defer=""></script><script src="./index_files/publish.CNtwZTFp.min.js.download" async=""></script><style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script><meta name="Reverso extension" content="3.10.373" id="Reverso_extension___elForCheckedInstallExtension">
-    <style>
-      .kimi-brand-container {
-        position: fixed;
-        bottom: 16px;
-        right: 16px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        z-index: 99999999;
-        transition: opacity 0.3s ease;
-      }
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f3d3e" />
+  <meta name="description" content="ثانوية نور المعارف الخاصة في كفر شمس - إعلان الافتتاح والتسجيل للمرحلة الثانوية بفرعيها العلمي والأدبي." />
+  <title>ثانوية نور المعارف الخاصة | كفر شمس</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f4f7f7;
+      --surface:#ffffff;
+      --text:#113233;
+      --muted:#5e7274;
+      --brand:#0f3d3e;
+      --brand-2:#1f6f78;
+      --accent:#d9a441;
+      --accent-2:#f2c76e;
+      --line:rgba(15,61,62,.12);
+      --shadow:0 18px 50px rgba(15,61,62,.11);
+      --radius:28px;
+      --radius-lg:36px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Cairo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(217,164,65,.14), transparent 28%),
+        radial-gradient(circle at 15% 20%, rgba(31,111,120,.10), transparent 25%),
+        linear-gradient(180deg,#fbfcfc 0%, #eef3f3 100%);
+      color:var(--text);
+      line-height:1.9;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px, calc(100% - 32px)); margin-inline:auto}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(140%) blur(14px);
+      background:rgba(244,247,247,.72);
+      border-bottom:1px solid rgba(15,61,62,.08);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:14px; min-width:0;
+    }
+    .brand img{
+      width:58px; height:58px; object-fit:contain;
+      padding:7px; background:rgba(255,255,255,.8);
+      border:1px solid var(--line); border-radius:18px;
+      box-shadow:0 8px 22px rgba(15,61,62,.08);
+    }
+    .brand h1{
+      font-size:1.05rem; margin:0; line-height:1.25; font-weight:900;
+    }
+    .brand p{margin:2px 0 0; color:var(--muted); font-size:.92rem}
+    .navlinks{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-start}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 14px; border:1px solid var(--line);
+      border-radius:999px; background:rgba(255,255,255,.72);
+      color:var(--brand); font-weight:700; font-size:.95rem;
+    }
 
-      .kimi-brand-close-icon {
-        cursor: pointer;
-        border-radius: 50%;
-        width: 26px;
-        height: 26px;
-        background: rgba(69, 69, 69, 0.70);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        border: 0.5px solid rgba(255, 255, 255, 0.15);
-      }
+    .hero{padding:34px 0 24px}
+    .hero-card{
+      background:
+        linear-gradient(135deg, rgba(15,61,62,.98), rgba(31,111,120,.95) 54%, rgba(12,44,49,.98)),
+        var(--brand);
+      color:#fff;
+      border-radius:var(--radius-lg);
+      padding:28px;
+      position:relative;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,.08);
+    }
+    .hero-card::before,
+    .hero-card::after{
+      content:"";
+      position:absolute;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      filter:blur(6px);
+    }
+    .hero-card::before{width:220px; height:220px; top:-70px; left:-40px}
+    .hero-card::after{width:170px; height:170px; bottom:-40px; right:8%}
+    .hero-grid{
+      display:grid; grid-template-columns:1.15fr .85fr; gap:22px; align-items:center;
+      position:relative; z-index:1;
+    }
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.14);
+      padding:8px 14px;
+      border-radius:999px;
+      font-weight:800;
+      margin-bottom:14px;
+    }
+    .hero h2{
+      margin:0 0 12px;
+      font-size:clamp(2rem, 4vw, 3.45rem);
+      line-height:1.18;
+      letter-spacing:-.02em;
+    }
+    .hero p{
+      margin:0 0 18px;
+      color:rgba(255,255,255,.88);
+      font-size:1.02rem;
+      max-width:62ch;
+    }
+    .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:22px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-height:48px; padding:0 18px; border-radius:16px;
+      font-weight:800; border:1px solid transparent;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+      will-change:transform;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#402c00; box-shadow:0 14px 28px rgba(217,164,65,.25);
+    }
+    .btn-ghost{
+      background:rgba(255,255,255,.08); color:#fff; border-color:rgba(255,255,255,.18);
+    }
+    .hero-side{
+      background:rgba(255,255,255,.09);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:24px;
+      padding:18px;
+      backdrop-filter: blur(6px);
+    }
+    .logo-box{
+      display:flex; align-items:center; justify-content:center;
+      min-height:240px;
+      background:radial-gradient(circle at center, rgba(255,255,255,.18), rgba(255,255,255,.05) 70%);
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .logo-box img{max-width:100%; max-height:230px; object-fit:contain; filter:drop-shadow(0 16px 26px rgba(0,0,0,.22))}
+    .hero-meta{
+      display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:14px;
+    }
+    .meta{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      padding:12px 14px;
+    }
+    .meta strong{display:block; font-size:1.04rem}
+    .meta span{color:rgba(255,255,255,.82); font-size:.92rem}
 
-      .kimi-brand-container:hover .kimi-brand-close-icon {
-        display: flex;
-      }
+    section{padding:18px 0}
+    .section-title{
+      display:flex; justify-content:space-between; align-items:end; gap:16px;
+      margin:0 0 14px;
+    }
+    .section-title h3{
+      margin:0;
+      font-size:1.55rem;
+      color:var(--brand);
+    }
+    .section-title p{margin:0; color:var(--muted)}
 
-      .kimi-brand-link {
-        background: #000;
-        color: white;
-        padding: 4px 6px 4px 4px;
-        border-radius: 16px;
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        line-height: 18px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        border: 0.5px solid rgba(255, 255, 255, 0.15);
-        text-decoration: none;
-      }
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+    }
+    .stat{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:18px;
+      box-shadow:0 10px 28px rgba(15,61,62,.05);
+    }
+    .stat .num{
+      font-size:1.9rem;
+      font-weight:900;
+      color:var(--brand);
+      margin-bottom:6px;
+      line-height:1.1;
+    }
+    .stat .label{color:var(--muted); font-weight:700}
 
-      .kimi-brand-container:hover .kimi-brand-icon {
-        width: 16px;
-      }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:22px;
+      box-shadow:0 10px 28px rgba(15,61,62,.05);
+    }
+    .feature{
+      display:flex; gap:14px; align-items:flex-start;
+    }
+    .icon{
+      flex:0 0 auto;
+      width:52px; height:52px;
+      border-radius:16px;
+      display:grid; place-items:center;
+      background:linear-gradient(135deg, rgba(15,61,62,.10), rgba(217,164,65,.14));
+      color:var(--brand);
+      font-size:1.35rem;
+      font-weight:900;
+    }
+    .feature h4{
+      margin:0 0 6px;
+      font-size:1.15rem;
+      color:var(--brand);
+    }
+    .feature p{margin:0; color:var(--muted)}
+    .feature ul{
+      margin:10px 0 0; padding:0 18px 0 0;
+      color:var(--text);
+    }
+    .feature li{margin:4px 0}
 
-      .kimi-brand-icon {
-        width: 0;
-        overflow: hidden;
-        transition: width 0.3s ease;
-        pointer-events: none;
-      }
+    .announcement{
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,255,255,.92));
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .announcement blockquote{
+      margin:0;
+      padding:0 18px 0 0;
+      border-right:4px solid var(--accent);
+      color:var(--text);
+      font-size:1.05rem;
+    }
+    .announcement .lead{
+      font-size:1.12rem;
+      font-weight:800;
+      color:var(--brand);
+      margin:0 0 10px;
+    }
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .contact{
+      display:grid;
+      gap:12px;
+    }
+    .contact-item{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:16px; border-radius:18px;
+      background:linear-gradient(180deg,#fff,#fbfdfd);
+      border:1px solid var(--line);
+    }
+    .contact-item strong{display:block; color:var(--brand)}
+    .contact-item span{color:var(--muted)}
+    .footer{
+      padding:28px 0 36px;
+      color:var(--muted);
+      font-size:.96rem;
+    }
+    .footer-inner{
+      border-top:1px solid rgba(15,61,62,.12);
+      padding-top:18px;
+      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;
+    }
 
-      .kimi-brand-avatar {
-        width: 18px;
-        height: 18px;
-        border: 0.5px solid rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-      }
-    </style>
-  <style>[_nghost-qln-c33]{--text-blue-blue-secondary: #0a6cc2;--text-base-base-tertiary: #607d8b;--color-new-blue-200: #d9ecfc;--bg-base-quaternary: #eaeef1;--color-black-0: #fff;--bg-base-tertiary: #f7f9f9;--text-base-base-primary: #222c31;--text-base-base-placeholder: #79929d;--line-gray-gray-secondary: #dee4e7;--light-web-feedback-error-secondary: #e45c45;--text-base-base-disabled: #92a6b0;--bg-base-define: #e8f3fc;--text-base-base-secondary: #3b4c55;--text-blue-blue-primary: #2a8bdf;--bg-base-define-blue-hover: #d9ecfc;--color-new-blue-100: #f6fafe;--color-new-blue-100-rgb: 246, 250, 254;--ref-Black-300: #cecece;--light-a-8: rgba(34, 44, 49, .1);--decorative-facebook: #1877f2;--premium-text-text-secondary: #9c7b1e;--color-yellow-premium-700: #ffca31;--rgba-shadow-1: rgba(0, 0, 0, .1);--rgba-shadow-2: rgba(34, 44, 49, .25);--rgba-text-1: rgba(255, 255, 255, .9);--decorative-reverso-blue: #053661;--text-blue-blue-quaternary: #bddef9;--rgba-shadow-3: rgba(0, 0, 0, .14);--rgba-shadow-4: rgba(0, 0, 0, .2);--rgba-shadow-5: rgba(0, 0, 0, .12);--action-secondary-secondary-hovered-2: #E8F3FC}[_nghost-qln-c33]   .quick-control-panel[_ngcontent-qln-c33]{cursor:pointer;z-index:1050;display:flex;padding:3px;box-sizing:border-box;border:1px solid var(--line-gray-gray-secondary);border-right:none;background:var(--color-black-0);box-shadow:0 4px 20px 0 var(--light-a-8);border-radius:8px 0 0 8px;width:40px}[_nghost-qln-c33]   .quick-control-panel__container[_ngcontent-qln-c33]{position:relative;display:flex;flex-direction:column-reverse;align-items:center;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__main-button[_ngcontent-qln-c33]{border:none;background-color:transparent;padding:0;cursor:pointer;display:flex;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__main-button[_ngcontent-qln-c33]     svg{width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__icon[_ngcontent-qln-c33]{width:32px;height:32px;display:flex}[_nghost-qln-c33]   .quick-control-panel__menu-items[_ngcontent-qln-c33]{display:flex;flex-direction:column;position:absolute;opacity:0;transition:all .3s ease;pointer-events:none;background:var(--color-black-0);gap:8px;width:40px;padding:8px 3px 0;bottom:36px;box-sizing:border-box;border-radius:8px 0 0;border-top:1px solid var(--line-gray-gray-secondary);border-left:1px solid var(--line-gray-gray-secondary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]{border-radius:8px;background-color:transparent;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;transform:translateY(10px);opacity:0;padding:0;transition:opacity .3s ease,transform .3s ease;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-user-menu[_ngcontent-qln-c33], [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-settings[_ngcontent-qln-c33], [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-one-click[_ngcontent-qln-c33]{display:flex;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-user-menu[_ngcontent-qln-c33]     svg, [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-settings[_ngcontent-qln-c33]     svg, [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-one-click[_ngcontent-qln-c33]     svg{width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]{background-color:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]     svg.filled path{fill:var(--color-black-0)}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]     svg.stroked path{stroke:var(--color-black-0)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover{background-color:var(--bg-base-tertiary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover     svg.filled path{fill:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover     svg.stroked path{stroke:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]{border-radius:0 0 0 8px;border-top:1px solid transparent}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__menu-items[_ngcontent-qln-c33]{opacity:1;pointer-events:all}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]{transform:translateY(0);opacity:1}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(1){transition-delay:.1s}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(2){transition-delay:.15s}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(3){transition-delay:.2s}</style></head>
-  <body data-new-gr-c-s-check-loaded="14.1304.0" data-gr-ext-installed="">
-    <div id="root"><div code-path="src/pages/Home.tsx:11:5" class="min-h-screen overflow-x-hidden"><nav code-path="src/components/Navbar.tsx:23:5" class="fixed top-0 right-0 left-0 z-50 transition-all duration-500 bg-transparent"><div code-path="src/components/Navbar.tsx:30:7" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div code-path="src/components/Navbar.tsx:31:9" class="flex items-center justify-between h-20"><a code-path="src/components/Navbar.tsx:33:11" href="https://vejje6p5shv6c.kimi.page/#hero" class="flex items-center gap-3 flex-shrink-0"><img code-path="src/components/Navbar.tsx:34:13" alt="شعار ثانوية نور المعارف" class="h-14 w-14 object-contain" src="./index_files/logo.png"><div code-path="src/components/Navbar.tsx:39:13" class="hidden sm:block font-cairo font-bold text-sm leading-tight transition-colors duration-300 text-white"><span code-path="src/components/Navbar.tsx:40:15" class="block">نور المعارف</span><span code-path="src/components/Navbar.tsx:41:15" class="block text-xs font-normal opacity-80">الخاصة</span></div></a><div code-path="src/components/Navbar.tsx:46:11" class="hidden lg:flex items-center gap-8"><a code-path="src/components/Navbar.tsx:48:15" href="https://vejje6p5shv6c.kimi.page/#hero" class="font-tajawal text-sm font-medium transition-all duration-300 hover:text-gold relative group text-white">الرئيسية<span code-path="src/components/Navbar.tsx:56:17" class="absolute -bottom-1 right-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span></a><a code-path="src/components/Navbar.tsx:48:15" href="https://vejje6p5shv6c.kimi.page/#announcement" class="font-tajawal text-sm font-medium transition-all duration-300 hover:text-gold relative group text-white">رسالتنا<span code-path="src/components/Navbar.tsx:56:17" class="absolute -bottom-1 right-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span></a><a code-path="src/components/Navbar.tsx:48:15" href="https://vejje6p5shv6c.kimi.page/#features" class="font-tajawal text-sm font-medium transition-all duration-300 hover:text-gold relative group text-white">ما يميزنا<span code-path="src/components/Navbar.tsx:56:17" class="absolute -bottom-1 right-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span></a><a code-path="src/components/Navbar.tsx:48:15" href="https://vejje6p5shv6c.kimi.page/#environment" class="font-tajawal text-sm font-medium transition-all duration-300 hover:text-gold relative group text-white">البيئة التعليمية<span code-path="src/components/Navbar.tsx:56:17" class="absolute -bottom-1 right-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span></a><a code-path="src/components/Navbar.tsx:48:15" href="https://vejje6p5shv6c.kimi.page/#contact" class="font-tajawal text-sm font-medium transition-all duration-300 hover:text-gold relative group text-white">تواصل معنا<span code-path="src/components/Navbar.tsx:56:17" class="absolute -bottom-1 right-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span></a></div><div code-path="src/components/Navbar.tsx:62:11" class="hidden lg:block"><a code-path="src/components/Navbar.tsx:63:13" href="https://vejje6p5shv6c.kimi.page/#contact" class="inline-flex items-center gap-2 bg-gradient-gold-btn text-navy font-cairo font-bold text-sm px-6 py-2.5 rounded-full hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-lg shadow-gold/25">سجل الآن</a></div><button code-path="src/components/Navbar.tsx:72:11" class="lg:hidden p-2 rounded-lg transition-colors text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true" code-path="src/components/Navbar.tsx:78:45"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div><div code-path="src/components/Navbar.tsx:84:7" class="lg:hidden transition-all duration-500 overflow-hidden max-h-0 opacity-0"><div code-path="src/components/Navbar.tsx:89:9" class="bg-white/95 backdrop-blur-md border-t border-gold/20 px-4 py-4 space-y-3"><a code-path="src/components/Navbar.tsx:91:13" href="https://vejje6p5shv6c.kimi.page/#hero" class="block font-tajawal text-navy font-medium py-2 hover:text-gold transition-colors border-b border-gray-100">الرئيسية</a><a code-path="src/components/Navbar.tsx:91:13" href="https://vejje6p5shv6c.kimi.page/#announcement" class="block font-tajawal text-navy font-medium py-2 hover:text-gold transition-colors border-b border-gray-100">رسالتنا</a><a code-path="src/components/Navbar.tsx:91:13" href="https://vejje6p5shv6c.kimi.page/#features" class="block font-tajawal text-navy font-medium py-2 hover:text-gold transition-colors border-b border-gray-100">ما يميزنا</a><a code-path="src/components/Navbar.tsx:91:13" href="https://vejje6p5shv6c.kimi.page/#environment" class="block font-tajawal text-navy font-medium py-2 hover:text-gold transition-colors border-b border-gray-100">البيئة التعليمية</a><a code-path="src/components/Navbar.tsx:91:13" href="https://vejje6p5shv6c.kimi.page/#contact" class="block font-tajawal text-navy font-medium py-2 hover:text-gold transition-colors border-b border-gray-100">تواصل معنا</a><a code-path="src/components/Navbar.tsx:100:11" href="https://vejje6p5shv6c.kimi.page/#contact" class="block text-center bg-gradient-gold-btn text-navy font-cairo font-bold py-3 rounded-full mt-3">سجل الآن</a></div></div></nav><main code-path="src/pages/Home.tsx:13:7"><section code-path="src/sections/Hero.tsx:112:5" id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-navy"><canvas code-path="src/sections/Hero.tsx:118:7" class="absolute inset-0 w-full h-full pointer-events-none" width="1901" height="868"></canvas><div code-path="src/sections/Hero.tsx:124:7" class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-navy/30 pointer-events-none"></div><div code-path="src/sections/Hero.tsx:127:7" class="relative z-10 text-center px-4 max-w-4xl mx-auto py-32"><div code-path="src/sections/Hero.tsx:132:9" class="hero-anim mb-8" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><img code-path="src/sections/Hero.tsx:133:11" alt="شعار ثانوية نور المعارف" class="w-32 h-32 sm:w-40 sm:h-40 mx-auto object-contain drop-shadow-2xl" src="./index_files/logo.png"></div><p code-path="src/sections/Hero.tsx:141:9" class="hero-anim text-white/80 font-tajawal text-lg sm:text-xl mb-4 tracking-wide" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">الإعلان الرسمي والانطلاقة الكبرى</p><h1 code-path="src/sections/Hero.tsx:146:9" class="hero-anim font-cairo font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gradient-gold leading-tight mb-4" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">ثانوية نور المعارف الخاصة</h1><p code-path="src/sections/Hero.tsx:151:9" class="hero-anim text-white/70 font-tajawal text-base sm:text-lg mb-8 flex items-center justify-center gap-2" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><span code-path="src/sections/Hero.tsx:152:11" class="inline-block w-8 h-px bg-gold/50"></span>كفر شمس - حوران<span code-path="src/sections/Hero.tsx:154:11" class="inline-block w-8 h-px bg-gold/50"></span></p><div code-path="src/sections/Hero.tsx:158:9" class="hero-anim flex flex-col sm:flex-row items-center justify-center gap-4" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><a code-path="src/sections/Hero.tsx:159:11" href="https://vejje6p5shv6c.kimi.page/#features" class="inline-flex items-center gap-2 bg-gradient-gold-btn text-navy font-cairo font-bold px-8 py-3.5 rounded-full hover:brightness-110 hover:scale-105 transition-all duration-300 shadow-xl shadow-gold/30">اكتشف مميزاتنا</a><a code-path="src/sections/Hero.tsx:165:11" href="https://vejje6p5shv6c.kimi.page/#announcement" class="inline-flex items-center gap-2 border-2 border-white/40 text-white font-cairo font-bold px-8 py-3.5 rounded-full hover:bg-white/10 hover:border-white/60 transition-all duration-300">اقرأ رسالتنا</a></div></div><div code-path="src/sections/Hero.tsx:175:7" class="absolute bottom-0 right-0 left-0"><svg code-path="src/sections/Hero.tsx:176:9" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full"><path code-path="src/sections/Hero.tsx:177:11" d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F8F0E3"></path></svg></div></section><section code-path="src/sections/Announcement.tsx:34:5" id="announcement" class="relative py-20 sm:py-28 bg-cream"><div code-path="src/sections/Announcement.tsx:39:7" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"><div code-path="src/sections/Announcement.tsx:41:9" class="text-center mb-12 reveal-item" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><span code-path="src/sections/Announcement.tsx:42:11" class="inline-block font-tajawal text-gold font-semibold text-sm tracking-wider mb-2">بسم الله الرحمن الرحيم</span><h2 code-path="src/sections/Announcement.tsx:45:11" class="font-cairo font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-4">انطلاقة جديدة نحو التميز</h2><div code-path="src/sections/Announcement.tsx:48:11" class="w-24 h-1 bg-gradient-gold-btn mx-auto rounded-full"></div></div><div code-path="src/sections/Announcement.tsx:52:9" class="reveal-item bg-white rounded-2xl shadow-xl p-6 sm:p-10 border border-gold/10" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Announcement.tsx:54:11" class="text-center mb-8"><p code-path="src/sections/Announcement.tsx:55:13" class="font-tajawal text-navy/90 text-base sm:text-lg leading-relaxed mb-4">إلى أهالينا الكرام في بلدة كفر شمس الأبية، وإلى ربوع وقرى حوران المعطاءة..</p><p code-path="src/sections/Announcement.tsx:58:13" class="font-tajawal text-navy/80 text-base leading-relaxed mb-4">إلى أولياء الأمور الحريصين على بناء مستقبل واعد لأبنائهم، وإلى طلابنا الأوفياء الطامحين نحو قمم التفوق والتميز الشريف؛</p><p code-path="src/sections/Announcement.tsx:61:13" class="font-tajawal text-navy/80 text-base leading-relaxed">إيماناً منا بأن التعليم هو حجر الأساس لبناء الأمم وصناعة الوعي، ولأن مرحلة الشهادة الثانوية هي المنعطف الأهم والركيزة الأقوى في مسيرة الطالب الأكاديمية؛</p></div><div code-path="src/sections/Announcement.tsx:67:11" class="flex items-center gap-4 my-8"><div code-path="src/sections/Announcement.tsx:68:13" class="flex-1 h-px bg-gradient-to-l from-gold/30 to-transparent"></div><div code-path="src/sections/Announcement.tsx:69:13" class="w-3 h-3 bg-gold rounded-full"></div><div code-path="src/sections/Announcement.tsx:70:13" class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div></div><div code-path="src/sections/Announcement.tsx:74:11" class="text-center mb-8"><p code-path="src/sections/Announcement.tsx:75:13" class="font-tajawal text-navy text-lg sm:text-xl leading-relaxed mb-4">نعلن لكم عن قرب فتح باب القبول والتسجيل للعام الدراسي الجديد في الصرح التعليمي الأحدث والأرقى في المنطقة:</p><h3 code-path="src/sections/Announcement.tsx:78:13" class="font-cairo font-black text-xl sm:text-2xl md:text-3xl text-gradient-gold my-6">ثانوية نور المعارف الخاصة</h3><p code-path="src/sections/Announcement.tsx:81:13" class="font-tajawal text-navy/80 text-base">(للمرحلة الثانوية بفرعيها: العلمي والأدبي)</p></div><div code-path="src/sections/Announcement.tsx:87:11" class="reveal-item bg-cream/60 rounded-xl p-6 border-r-4 border-gold" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><p code-path="src/sections/Announcement.tsx:88:13" class="font-cairo font-bold text-navy text-base sm:text-lg leading-relaxed text-center italic">"ولأن نجاح أي منشأة يبدأ من قوة قيادتها وحكمتها، يسعدنا أن نفتح أبوابنا متسلحين بأفضل كادر تدريسي وإداري في المنطقة، لنكون الخيار الأول والآمن لمستقبل أبنائكم."</p></div></div></div></section><section code-path="src/sections/Features.tsx:89:5" id="features" class="relative py-20 sm:py-28 bg-white"><div code-path="src/sections/Features.tsx:95:7" class="absolute top-0 right-0 left-0 rotate-180"><svg code-path="src/sections/Features.tsx:96:9" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full"><path code-path="src/sections/Features.tsx:97:11" d="M0 80L60 72C120 64 240 48 360 40C480 32 600 32 720 36C840 40 960 48 1080 52C1200 56 1320 56 1380 56L1440 56V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="#F8F0E3"></path></svg></div><div code-path="src/sections/Features.tsx:104:7" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div code-path="src/sections/Features.tsx:106:9" class="text-center mb-14"><span code-path="src/sections/Features.tsx:107:11" class="inline-block font-tajawal text-gold font-semibold text-sm tracking-wider mb-2">سبعة أسباب تجعلنا الخيار الأمثل</span><h2 code-path="src/sections/Features.tsx:110:11" class="font-cairo font-bold text-2xl sm:text-3xl md:text-4xl text-navy mb-4">لماذا تختار نور المعارف؟</h2><div code-path="src/sections/Features.tsx:113:11" class="w-24 h-1 bg-gradient-gold-btn mx-auto rounded-full"></div></div><div code-path="src/sections/Features.tsx:117:9" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">بيئة تعليمية نموذجية ومحدودة السعة</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">تضم المدرسة (8) شعب صفية متكاملة مخصصة حصرياً لصفوف المرحلة الثانوية، مما يضمن خفض الكثافة الطلابية داخل القاعات، ورفع كفاءة الاستيعاب، وتأمين التركيز والمتابعة المباشرة من المعلم لكل طالب وطالبة.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">كادر تدريسي نخبوي لشهادة البكالوريا</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">تم اختيار مدرسينا بعناية فائقة من صفوة الكفاءات التربوية المشهود لها في المواد العلمية والأدبية، مع تخصيص الشعبة الثامنة الرديفة للتقوية المكثفة لطلاب شهادة الثانوية العامة.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">التحول الرقمي الاستباقي ومواكبة العصر</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">انطلاقاً من رؤيتنا بأن التكنولوجيا أداة لتبسيط العلوم، نتميز بدمج المناهج الرقمية وأدوات العرض الحديثة، مع ربط فصولنا بالمنصة الافتراضية المساعدة للمدرسة.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><path d="m16 11 2 2 4-4"></path><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">فصل تام بين الجنسين</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">حرصاً على توفير بيئة تعليمية مريحة وممتلئة بالخصوصية والتركيز، تم تخصيص أقسام مستقلة تماماً لكل من الطلاب والطالبات بما يتماشى مع قيمنا التربوية والاجتماعية.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-list w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">أوراق عمل تفاعلية ومتابعة مستمرة مع الأهل</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">نؤمن بأن التعليم شراكة بين المدرسة والمنزل؛ لذا نعتمد نظام أوراق العمل الدورية لقياس مستوى الطلاب، مع قنوات تواصل مستمرة لإطلاع أولياء الأمور على أدق التفاصيل الأكاديمية.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">كرامة مصانة ومواطنة جامعة</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">نلتزم بتطبيق لائحة أحكام داخلية صارمة تضمن بيئة تربوية آمنة، ترتكز على الأخلاق القويمة، العدالة الاجتماعية، وترسيخ قيم الاحترام المتبادل والعيش المشترك.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div><div code-path="src/sections/Features.tsx:124:15" class="feature-card group bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-500" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Features.tsx:129:17" class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-8 h-8 text-gold" aria-hidden="true" code-path="src/sections/Features.tsx:130:19"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></div><h3 code-path="src/sections/Features.tsx:134:17" class="font-cairo font-bold text-navy text-base sm:text-lg mb-3 leading-snug group-hover:text-gold-dark transition-colors duration-300">سياسة أقساط مرنة وميسرة</h3><p code-path="src/sections/Features.tsx:139:17" class="font-tajawal text-muted-foreground text-sm leading-relaxed">تيسيراً على أهالينا ومراعاة للظروف المعيشية، اعتمدت الإدارة المالية خطاً سعرياً مرناً للأقساط السنوية يُسدد على دفعات ميسرة، مع تقديم حسومات تشجيعية خاصة للأخوة، ومنح دراسية تصل إلى 100%.</p><div code-path="src/sections/Features.tsx:144:17" class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gold/20 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div></div></div></div><div code-path="src/sections/Features.tsx:152:7" class="absolute bottom-0 right-0 left-0"><svg code-path="src/sections/Features.tsx:153:9" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full"><path code-path="src/sections/Features.tsx:154:11" d="M0 80L60 72C120 64 240 48 360 40C480 32 600 32 720 36C840 40 960 48 1080 52C1200 56 1320 56 1380 56L1440 56V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="#F8F0E3"></path></svg></div></section><section code-path="src/sections/Environment.tsx:337:5" id="environment" class="relative py-20 sm:py-28 bg-gradient-navy overflow-hidden"><div code-path="src/sections/Environment.tsx:343:7" class="absolute top-20 right-10 w-64 h-64 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div><div code-path="src/sections/Environment.tsx:344:7" class="absolute bottom-20 left-10 w-80 h-80 bg-navy-light/30 rounded-full blur-3xl pointer-events-none"></div><div code-path="src/sections/Environment.tsx:346:7" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"><div code-path="src/sections/Environment.tsx:348:9" class="text-center mb-14"><span code-path="src/sections/Environment.tsx:349:11" class="env-reveal inline-block font-tajawal text-gold font-semibold text-sm tracking-wider mb-2" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">استكشف عالمنا التعليمي</span><h2 code-path="src/sections/Environment.tsx:352:11" class="env-reveal font-cairo font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-4" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">استكشف بيئتنا التعليمية</h2><div code-path="src/sections/Environment.tsx:355:11" class="env-reveal w-24 h-1 bg-gradient-gold-btn mx-auto rounded-full mb-6" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"></div><p code-path="src/sections/Environment.tsx:356:11" class="env-reveal font-tajawal text-white/70 text-base max-w-2xl mx-auto" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">نقدم لكم بيئة تعليمية تفاعلية تجمع بين الأصالة والحداثة، حيث يلتقي الإبداع بالمعرفة</p></div><div code-path="src/sections/Environment.tsx:362:9" class="mb-14"><div code-path="src/sections/Environment.tsx:41:5" class="glass-effect rounded-2xl p-6 sm:p-8 text-center max-w-xl mx-auto"><p code-path="src/sections/Environment.tsx:42:7" class="font-cairo text-xl sm:text-2xl md:text-3xl text-gold transition-colors duration-500">مرحباً بكم في نور المعارف...</p></div></div><div code-path="src/sections/Environment.tsx:367:9" class="mb-14 bg-white/5 rounded-2xl border border-white/10 p-4"><h3 code-path="src/sections/Environment.tsx:368:11" class="font-cairo font-bold text-white text-center text-lg mb-2">موادنا الدراسية</h3><p code-path="src/sections/Environment.tsx:371:11" class="font-tajawal text-white/50 text-sm text-center mb-4">مرر المؤشر فوق الفقاعات لاستكشاف المزيد</p><div code-path="src/sections/Environment.tsx:227:5" class="relative w-full h-80 sm:h-96"><canvas code-path="src/sections/Environment.tsx:228:7" class="absolute inset-0 w-full h-full cursor-pointer" width="1317" height="480"></canvas></div></div><div code-path="src/sections/Environment.tsx:378:9" class="bg-white/5 rounded-2xl border border-white/10 p-6 sm:p-8"><h3 code-path="src/sections/Environment.tsx:379:11" class="font-cairo font-bold text-white text-center text-lg mb-6">أوراق العمل التفاعلية</h3><div code-path="src/sections/Environment.tsx:278:5" class="flex flex-col items-center gap-6"><div code-path="src/sections/Environment.tsx:279:7" class="relative flex items-center justify-center h-48 sm:h-56"><div code-path="src/sections/Environment.tsx:281:11" class="study-card absolute w-24 h-32 sm:w-28 sm:h-36 bg-white rounded-xl shadow-lg border border-gold/20 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow" style="z-index: 3; translate: none; rotate: none; scale: none; transform: rotate(-24deg);"><img code-path="src/sections/Environment.tsx:288:13" alt="شعار" class="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-60" src="./index_files/logo.png"><span code-path="src/sections/Environment.tsx:293:13" class="font-cairo text-xs text-navy/60 mt-2">ورقة عمل 1</span></div><div code-path="src/sections/Environment.tsx:281:11" class="study-card absolute w-24 h-32 sm:w-28 sm:h-36 bg-white rounded-xl shadow-lg border border-gold/20 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow" style="z-index: 4; translate: none; rotate: none; scale: none; transform: rotate(-12deg);"><img code-path="src/sections/Environment.tsx:288:13" alt="شعار" class="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-60" src="./index_files/logo.png"><span code-path="src/sections/Environment.tsx:293:13" class="font-cairo text-xs text-navy/60 mt-2">ورقة عمل 2</span></div><div code-path="src/sections/Environment.tsx:281:11" class="study-card absolute w-24 h-32 sm:w-28 sm:h-36 bg-white rounded-xl shadow-lg border border-gold/20 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow" style="z-index: 5; translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"><img code-path="src/sections/Environment.tsx:288:13" alt="شعار" class="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-60" src="./index_files/logo.png"><span code-path="src/sections/Environment.tsx:293:13" class="font-cairo text-xs text-navy/60 mt-2">ورقة عمل 3</span></div><div code-path="src/sections/Environment.tsx:281:11" class="study-card absolute w-24 h-32 sm:w-28 sm:h-36 bg-white rounded-xl shadow-lg border border-gold/20 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow" style="z-index: 4; translate: none; rotate: none; scale: none; transform: rotate(12deg);"><img code-path="src/sections/Environment.tsx:288:13" alt="شعار" class="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-60" src="./index_files/logo.png"><span code-path="src/sections/Environment.tsx:293:13" class="font-cairo text-xs text-navy/60 mt-2">ورقة عمل 4</span></div><div code-path="src/sections/Environment.tsx:281:11" class="study-card absolute w-24 h-32 sm:w-28 sm:h-36 bg-white rounded-xl shadow-lg border border-gold/20 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow" style="z-index: 3; translate: none; rotate: none; scale: none; transform: rotate(24deg);"><img code-path="src/sections/Environment.tsx:288:13" alt="شعار" class="w-12 h-12 sm:w-14 sm:h-14 object-contain opacity-60" src="./index_files/logo.png"><span code-path="src/sections/Environment.tsx:293:13" class="font-cairo text-xs text-navy/60 mt-2">ورقة عمل 5</span></div></div><button code-path="src/sections/Environment.tsx:300:7" class="inline-flex items-center gap-2 bg-white/10 border border-gold/30 text-gold font-cairo font-semibold px-6 py-2.5 rounded-full hover:bg-gold/20 transition-all duration-300">انتشار الأوراق</button></div></div></div><div code-path="src/sections/Environment.tsx:387:7" class="absolute bottom-0 right-0 left-0"><svg code-path="src/sections/Environment.tsx:388:9" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full"><path code-path="src/sections/Environment.tsx:389:11" d="M0 80L60 72C120 64 240 48 360 40C480 32 600 32 720 36C840 40 960 48 1080 52C1200 56 1320 56 1380 56L1440 56V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="#002147"></path></svg></div></section><section code-path="src/sections/Contact.tsx:57:5" id="contact" class="relative py-20 sm:py-28 bg-navy-dark"><div code-path="src/sections/Contact.tsx:63:7" class="absolute top-0 right-0 left-0 rotate-180"><svg code-path="src/sections/Contact.tsx:64:9" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full"><path code-path="src/sections/Contact.tsx:65:11" d="M0 80L60 72C120 64 240 48 360 40C480 32 600 32 720 36C840 40 960 48 1080 52C1200 56 1320 56 1380 56L1440 56V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="#002147"></path></svg></div><div code-path="src/sections/Contact.tsx:72:7" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div code-path="src/sections/Contact.tsx:74:9" class="text-center mb-14"><span code-path="src/sections/Contact.tsx:75:11" class="contact-reveal inline-block font-tajawal text-gold font-semibold text-sm tracking-wider mb-2" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">نحن في انتظار تواصلكم</span><h2 code-path="src/sections/Contact.tsx:78:11" class="contact-reveal font-cairo font-bold text-2xl sm:text-3xl md:text-4xl text-white mb-4" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">نحن هنا لمساعدتك</h2><div code-path="src/sections/Contact.tsx:81:11" class="contact-reveal w-24 h-1 bg-gradient-gold-btn mx-auto rounded-full" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"></div></div><div code-path="src/sections/Contact.tsx:84:9" class="grid lg:grid-cols-5 gap-8 lg:gap-12"><div code-path="src/sections/Contact.tsx:86:11" class="lg:col-span-2 space-y-6"><div code-path="src/sections/Contact.tsx:87:13" class="contact-reveal bg-white/5 rounded-2xl p-6 border border-white/10" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Contact.tsx:88:15" class="flex items-start gap-4"><div code-path="src/sections/Contact.tsx:89:17" class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-6 h-6 text-gold" aria-hidden="true" code-path="src/sections/Contact.tsx:90:19"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div code-path="src/sections/Contact.tsx:92:17"><h4 code-path="src/sections/Contact.tsx:93:19" class="font-cairo font-bold text-white text-base mb-1">العنوان</h4><p code-path="src/sections/Contact.tsx:96:19" class="font-tajawal text-white/70 text-sm leading-relaxed">بلدة كفر شمس - حوران - سوريا</p></div></div></div><div code-path="src/sections/Contact.tsx:103:13" class="contact-reveal bg-white/5 rounded-2xl p-6 border border-white/10" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Contact.tsx:104:15" class="flex items-start gap-4"><div code-path="src/sections/Contact.tsx:105:17" class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-6 h-6 text-gold" aria-hidden="true" code-path="src/sections/Contact.tsx:106:19"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></div><div code-path="src/sections/Contact.tsx:108:17"><h4 code-path="src/sections/Contact.tsx:109:19" class="font-cairo font-bold text-white text-base mb-1">البريد الإلكتروني</h4><p code-path="src/sections/Contact.tsx:112:19" class="font-tajawal text-white/70 text-sm" dir="ltr">noor-almaarif.dirasi.com</p></div></div></div><div code-path="src/sections/Contact.tsx:119:13" class="contact-reveal bg-white/5 rounded-2xl p-6 border border-white/10" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div code-path="src/sections/Contact.tsx:120:15" class="flex items-start gap-4"><div code-path="src/sections/Contact.tsx:121:17" class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-gold" aria-hidden="true" code-path="src/sections/Contact.tsx:122:19"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg></div><div code-path="src/sections/Contact.tsx:124:17"><h4 code-path="src/sections/Contact.tsx:125:19" class="font-cairo font-bold text-white text-base mb-1">الهاتف</h4><p code-path="src/sections/Contact.tsx:128:19" class="font-tajawal text-white/70 text-sm" dir="ltr">قريباً</p></div></div></div></div><div code-path="src/sections/Contact.tsx:137:11" class="lg:col-span-3"><div code-path="src/sections/Contact.tsx:138:13" class="contact-reveal bg-white/5 rounded-2xl p-6 sm:p-8 border border-white/10" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><form code-path="src/sections/Contact.tsx:150:17" class="space-y-5"><div code-path="src/sections/Contact.tsx:151:19" class="grid sm:grid-cols-2 gap-5"><div code-path="src/sections/Contact.tsx:152:21"><label code-path="src/sections/Contact.tsx:153:23" class="block font-cairo text-white/80 text-sm mb-2">الاسم الكامل</label><input code-path="src/sections/Contact.tsx:156:23" required="" class="w-full bg-white/5 border border-gold/20 rounded-xl px-4 py-3 text-white font-tajawal placeholder-white/30 focus:border-gold focus:ring-1 focus:ring-gold/30 outline-none transition-all" placeholder="أدخل اسمك" type="text" value="" name="name"></div><div code-path="src/sections/Contact.tsx:166:21"><label code-path="src/sections/Contact.tsx:167:23" class="block font-cairo text-white/80 text-sm mb-2">البريد الإلكتروني</label><input code-path="src/sections/Contact.tsx:170:23" required="" class="w-full bg-white/5 border border-gold/20 rounded-xl px-4 py-3 text-white font-tajawal placeholder-white/30 focus:border-gold focus:ring-1 focus:ring-gold/30 outline-none transition-all" placeholder="example@email.com" dir="ltr" type="email" value="" name="email"></div></div><div code-path="src/sections/Contact.tsx:183:19"><label code-path="src/sections/Contact.tsx:184:21" class="block font-cairo text-white/80 text-sm mb-2">رقم الهاتف</label><input code-path="src/sections/Contact.tsx:187:21" class="w-full bg-white/5 border border-gold/20 rounded-xl px-4 py-3 text-white font-tajawal placeholder-white/30 focus:border-gold focus:ring-1 focus:ring-gold/30 outline-none transition-all" placeholder="+963..." dir="ltr" type="tel" value="" name="phone"></div><div code-path="src/sections/Contact.tsx:198:19"><label code-path="src/sections/Contact.tsx:199:21" class="block font-cairo text-white/80 text-sm mb-2">الرسالة</label><textarea code-path="src/sections/Contact.tsx:202:21" name="message" required="" rows="5" class="w-full bg-white/5 border border-gold/20 rounded-xl px-4 py-3 text-white font-tajawal placeholder-white/30 focus:border-gold focus:ring-1 focus:ring-gold/30 outline-none transition-all resize-none" placeholder="اكتب رسالتك هنا..."></textarea></div><button code-path="src/sections/Contact.tsx:213:19" type="submit" class="w-full flex items-center justify-center gap-2 bg-gradient-gold-btn text-navy font-cairo font-bold py-3.5 rounded-xl hover:brightness-110 hover:scale-[1.02] transition-all duration-300 shadow-lg shadow-gold/20"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-5 h-5" aria-hidden="true" code-path="src/sections/Contact.tsx:217:21"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>إرسال الرسالة</button></form></div></div></div></div></section></main><footer code-path="src/components/Footer.tsx:13:5" class="relative bg-navy-dark border-t border-white/5"><div code-path="src/components/Footer.tsx:14:7" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16"><div code-path="src/components/Footer.tsx:15:9" class="grid md:grid-cols-3 gap-10"><div code-path="src/components/Footer.tsx:17:11" class="text-center md:text-right"><div code-path="src/components/Footer.tsx:18:13" class="flex items-center justify-center md:justify-start gap-3 mb-4"><img code-path="src/components/Footer.tsx:19:15" alt="شعار ثانوية نور المعارف" class="w-14 h-14 object-contain" src="./index_files/logo.png"><div code-path="src/components/Footer.tsx:24:15"><h4 code-path="src/components/Footer.tsx:25:17" class="font-cairo font-bold text-white text-base">ثانوية نور المعارف الخاصة</h4><p code-path="src/components/Footer.tsx:28:17" class="font-tajawal text-white/50 text-xs">بالعلم والعمل نبني قادة الغد</p></div></div><p code-path="src/components/Footer.tsx:33:13" class="font-tajawal text-white/60 text-sm leading-relaxed">مؤسسة تعليمية رائدة مكرسة لتقديم تعليم ثانوي متميز في بيئة محفزة تتيح لطلابنا تحقيق أقصى إمكاناتهم.</p></div><div code-path="src/components/Footer.tsx:39:11" class="text-center"><h4 code-path="src/components/Footer.tsx:40:13" class="font-cairo font-bold text-gold text-base mb-4">روابط سريعة</h4><ul code-path="src/components/Footer.tsx:43:13" class="space-y-2.5"><li code-path="src/components/Footer.tsx:45:17"><a code-path="src/components/Footer.tsx:46:19" href="https://vejje6p5shv6c.kimi.page/#hero" class="font-tajawal text-white/60 hover:text-gold transition-colors text-sm inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3" aria-hidden="true" code-path="src/components/Footer.tsx:50:21"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>الرئيسية</a></li><li code-path="src/components/Footer.tsx:45:17"><a code-path="src/components/Footer.tsx:46:19" href="https://vejje6p5shv6c.kimi.page/#announcement" class="font-tajawal text-white/60 hover:text-gold transition-colors text-sm inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3" aria-hidden="true" code-path="src/components/Footer.tsx:50:21"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>رسالتنا</a></li><li code-path="src/components/Footer.tsx:45:17"><a code-path="src/components/Footer.tsx:46:19" href="https://vejje6p5shv6c.kimi.page/#features" class="font-tajawal text-white/60 hover:text-gold transition-colors text-sm inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3" aria-hidden="true" code-path="src/components/Footer.tsx:50:21"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>ما يميزنا</a></li><li code-path="src/components/Footer.tsx:45:17"><a code-path="src/components/Footer.tsx:46:19" href="https://vejje6p5shv6c.kimi.page/#environment" class="font-tajawal text-white/60 hover:text-gold transition-colors text-sm inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3" aria-hidden="true" code-path="src/components/Footer.tsx:50:21"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>البيئة التعليمية</a></li><li code-path="src/components/Footer.tsx:45:17"><a code-path="src/components/Footer.tsx:46:19" href="https://vejje6p5shv6c.kimi.page/#contact" class="font-tajawal text-white/60 hover:text-gold transition-colors text-sm inline-flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-3 h-3" aria-hidden="true" code-path="src/components/Footer.tsx:50:21"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>تواصل معنا</a></li></ul></div><div code-path="src/components/Footer.tsx:59:11" class="text-center md:text-left"><h4 code-path="src/components/Footer.tsx:60:13" class="font-cairo font-bold text-gold text-base mb-4">معلومات التواصل</h4><ul code-path="src/components/Footer.tsx:63:13" class="space-y-3"><li code-path="src/components/Footer.tsx:64:15" class="flex items-center justify-center md:justify-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-gold flex-shrink-0" aria-hidden="true" code-path="src/components/Footer.tsx:65:17"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span code-path="src/components/Footer.tsx:66:17" class="font-tajawal text-white/60 text-sm">بلدة كفر شمس - حوران</span></li><li code-path="src/components/Footer.tsx:70:15" class="flex items-center justify-center md:justify-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-gold flex-shrink-0" aria-hidden="true" code-path="src/components/Footer.tsx:71:17"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg><span code-path="src/components/Footer.tsx:72:17" class="font-tajawal text-white/60 text-sm" dir="ltr">noor-almaarif.dirasi.com</span></li></ul></div></div><div code-path="src/components/Footer.tsx:84:9" class="border-t border-white/10 mt-10 pt-6"><div code-path="src/components/Footer.tsx:85:11" class="flex flex-col sm:flex-row items-center justify-between gap-4"><p code-path="src/components/Footer.tsx:86:13" class="font-tajawal text-white/40 text-xs text-center sm:text-right">جميع الحقوق محفوظة © 2025 ثانوية نور المعارف الخاصة</p><p code-path="src/components/Footer.tsx:89:13" class="font-tajawal text-white/30 text-xs text-center sm:text-left">فبالشكر تدوم النعم</p></div></div></div></footer></div></div>
-  
-
-<div id="Reverso_extension__quick_control_panel" style="z-index: 2147483647; position: relative;"><re-quick-control-panel ng-version="14.2.12"><template shadowrootmode="open"><style>:host{--text-blue-blue-secondary: #0a6cc2;--text-base-base-tertiary: #607d8b;--color-new-blue-200: #d9ecfc;--bg-base-quaternary: #eaeef1;--color-black-0: #fff;--bg-base-tertiary: #f7f9f9;--text-base-base-primary: #222c31;--text-base-base-placeholder: #79929d;--line-gray-gray-secondary: #dee4e7;--light-web-feedback-error-secondary: #e45c45;--text-base-base-disabled: #92a6b0;--bg-base-define: #e8f3fc;--text-base-base-secondary: #3b4c55;--text-blue-blue-primary: #2a8bdf;--bg-base-define-blue-hover: #d9ecfc;--color-new-blue-100: #f6fafe;--color-new-blue-100-rgb: 246, 250, 254;--ref-Black-300: #cecece;--light-a-8: rgba(34, 44, 49, .1);--decorative-facebook: #1877f2;--premium-text-text-secondary: #9c7b1e;--color-yellow-premium-700: #ffca31;--rgba-shadow-1: rgba(0, 0, 0, .1);--rgba-shadow-2: rgba(34, 44, 49, .25);--rgba-text-1: rgba(255, 255, 255, .9);--decorative-reverso-blue: #053661;--text-blue-blue-quaternary: #bddef9;--rgba-shadow-3: rgba(0, 0, 0, .14);--rgba-shadow-4: rgba(0, 0, 0, .2);--rgba-shadow-5: rgba(0, 0, 0, .12);--action-secondary-secondary-hovered-2: #E8F3FC}.cdk-overlay-container,.cdk-global-overlay-wrapper{pointer-events:none;top:0;left:0;height:100%;width:100%}.cdk-overlay-container{position:fixed;z-index:1000}.cdk-overlay-container:empty{display:none}.cdk-global-overlay-wrapper{display:flex;position:absolute;z-index:1000}.cdk-overlay-pane{position:absolute;pointer-events:auto;box-sizing:border-box;z-index:1000;display:flex;max-width:100%;max-height:100%}.cdk-overlay-backdrop{position:absolute;inset:0;z-index:1000;pointer-events:auto;-webkit-tap-highlight-color:rgba(0,0,0,0);transition:opacity .4s cubic-bezier(.25,.8,.25,1);opacity:0}.cdk-overlay-backdrop.cdk-overlay-backdrop-showing{opacity:1}.cdk-high-contrast-active .cdk-overlay-backdrop.cdk-overlay-backdrop-showing{opacity:.6}.cdk-overlay-dark-backdrop{background:rgba(0,0,0,.32)}.cdk-overlay-transparent-backdrop{transition:visibility 1ms linear,opacity 1ms linear;visibility:hidden;opacity:1}.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing{opacity:0;visibility:visible}.cdk-overlay-backdrop-noop-animation{transition:none}.cdk-overlay-connected-position-bounding-box{position:absolute;z-index:1000;display:flex;flex-direction:column;min-width:1px;min-height:1px}.cdk-global-scrollblock{position:fixed;width:100%;overflow-y:scroll}:host{position:fixed;right:0;top:50%}:host *{font-family:Arial,Helvetica,sans-serif!important;direction:ltr}:host .overlay-container,:host .custom-overlay-container{position:fixed;z-index:1070;width:100%;height:100%;top:0;left:0;pointer-events:none}:host .overlay-container:empty,:host .custom-overlay-container:empty{display:none}
-</style><re-sticky-app _nghost-qln-c33=""><div _ngcontent-qln-c33="" class="quick-control-panel"><div _ngcontent-qln-c33="" class="quick-control-panel__container"><button _ngcontent-qln-c33="" class="quick-control-panel__main-button"><re-icon-reverso _ngcontent-qln-c33=""><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g><rect width="32" height="32" rx="6" fill="white"></rect><g><g><g><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2255 16.2328C13.8509 16.2328 13.5374 16.6657 13.2739 16.9319C13.0337 17.1746 12.7002 17.325 12.3316 17.325C11.5996 17.325 11.0061 16.7318 11.0061 16.0001C11.0061 15.2684 11.5996 14.6753 12.3316 14.6753C12.7422 14.6753 13.1091 14.8619 13.3523 15.1548C13.5787 15.4276 13.8709 15.8562 14.2255 15.8562C14.5801 15.8562 14.8723 15.4276 15.0987 15.1548C15.3418 14.8619 15.7088 14.6753 16.1194 14.6753C16.5301 14.6753 16.8973 14.862 17.1404 15.1552C17.3665 15.4279 17.6584 15.8562 18.0127 15.8562C18.367 15.8562 18.6589 15.4279 18.885 15.1552C19.1281 14.862 19.4952 14.6753 19.906 14.6753C20.6381 14.6753 21.2315 15.2684 21.2315 16.0001C21.2315 16.7318 20.6381 17.325 19.906 17.325C19.5372 17.325 19.2036 17.1744 18.9633 16.9315C18.7002 16.6655 18.3869 16.2328 18.0127 16.2328C17.6385 16.2328 17.3252 16.6655 17.0621 16.9315C16.8218 17.1744 16.4882 17.325 16.1194 17.325C15.7508 17.325 15.4173 17.1746 15.177 16.9319C14.9136 16.6657 14.6001 16.2328 14.2255 16.2328Z" fill="#157CD5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.30314 7.89468L14.7724 3.07702C15.0267 2.88767 15.3882 3.06905 15.3882 3.38598V6.17745H18.4119C23.8386 6.17745 28.2378 10.5745 28.2378 15.9986C28.2378 17.2689 27.9965 18.4828 27.5572 19.5972C27.4734 19.8099 27.2192 19.892 27.021 19.7777L24.7295 18.4554C24.5657 18.3608 24.4959 18.1618 24.5541 17.9819C24.7559 17.357 24.8649 16.6905 24.8649 15.9986C24.8649 12.4364 21.9758 9.54871 18.4119 9.54871H18.4115H16.4485V9.54856H9.29492C7.79946 9.54856 7.66198 8.299 8.30314 7.89468Z" fill="#157CD5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M23.9346 24.1053L17.4654 28.923C17.2111 29.1123 16.8496 28.931 16.8496 28.614V25.8225H13.8259C8.39921 25.8225 4.00001 21.4255 4.00001 16.0014C4.00001 14.7311 4.24129 13.5172 4.68056 12.4028C4.76443 12.1901 5.01864 12.1079 5.21678 12.2223L7.50827 13.5446C7.6721 13.6392 7.74185 13.8382 7.68374 14.0181C7.48193 14.643 7.37292 15.3095 7.37292 16.0014C7.37292 19.5636 10.262 22.4513 13.8259 22.4513H13.8263H15.7893V22.4514H22.9429C24.4383 22.4514 24.5758 23.701 23.9346 24.1053Z" fill="#DF3D22"></path></g></g></g></g><defs><rect width="32" height="32" rx="6" fill="white"></rect><rect width="24.2377" height="25.9999" fill="white" transform="translate(4 3)"></rect><rect width="24.2377" height="25.9999" fill="white" transform="translate(4 3)"></rect><rect width="24.2377" height="25.9999" fill="white" transform="translate(4 3)"></rect></defs></svg></re-icon-reverso></button><div _ngcontent-qln-c33="" class="quick-control-panel__menu-items"><button _ngcontent-qln-c33="" retooltip="" class="quick-control-panel__item quick-control-panel__item_settings"><re-icon-settings><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="filled"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9998 12C13.774 12 11.9302 13.7694 11.9302 16C11.9302 18.2306 13.774 20 15.9998 20C18.2256 20 20.0693 18.2306 20.0693 16C20.0693 13.7694 18.2256 12 15.9998 12ZM13.9302 16C13.9302 14.9169 14.8351 14 15.9998 14C17.1645 14 18.0693 14.9169 18.0693 16C18.0693 17.0831 17.1645 18 15.9998 18C14.8351 18 13.9302 17.0831 13.9302 16Z" fill="#607D8B"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9535 6C13.4865 6 13.0816 6.32326 12.9783 6.77871L12.5291 8.75825C12.1159 8.94853 11.7195 9.17256 11.3443 9.42807L9.34239 8.81221C8.9003 8.6762 8.42263 8.86113 8.18737 9.25937L6.14101 12.7234C5.89863 13.1336 5.97943 13.658 6.33407 13.9762L7.86394 15.3492C7.82801 15.783 7.82801 16.2188 7.86392 16.6526L6.33428 18.0246C5.97947 18.3428 5.89858 18.8673 6.14101 19.2776L8.18737 22.7416C8.42263 23.1399 8.9003 23.3248 9.34239 23.1888L11.3444 22.5729C11.7194 22.8281 12.1154 23.0518 12.5283 23.2419L12.9784 25.2217C13.0819 25.6769 13.4866 26 13.9535 26H18.0462C18.5131 26 18.9178 25.6769 19.0213 25.2217L19.4715 23.2415C19.8845 23.051 20.2807 22.8267 20.6558 22.571L22.6573 23.1868C23.0994 23.3228 23.5771 23.1379 23.8123 22.7396L25.8587 19.2756C26.1011 18.8653 26.0202 18.3408 25.6654 18.0226L24.1358 16.6506C24.1717 16.2169 24.1717 15.7811 24.1358 15.3474L25.6654 13.9754C26.0202 13.6572 26.1011 13.1327 25.8587 12.7224L23.8123 9.25837C23.5771 8.86013 23.0994 8.6752 22.6573 8.81121L20.6552 9.42712C20.2803 9.17193 19.8842 8.94817 19.4714 8.7581L19.0213 6.77833C18.9178 6.32306 18.5131 6 18.0462 6H13.9535ZM14.3659 9.70129L14.752 8H17.248L17.6349 9.70167C17.7089 10.0275 17.9409 10.2948 18.253 10.4141C18.8315 10.6352 19.3717 10.9401 19.8556 11.3181C20.1131 11.5193 20.4528 11.5819 20.7652 11.4858L22.4915 10.9547L23.7198 13.0339L22.4146 14.2046C22.1631 14.4301 22.0425 14.7674 22.094 15.1013C22.1857 15.6964 22.1857 16.3016 22.094 16.8967C22.0425 17.2306 22.1631 17.5679 22.4146 17.7934L23.7198 18.9641L22.4915 21.0433L20.7652 20.5122C20.4525 20.416 20.1125 20.4789 19.8548 20.6805C19.3711 21.0591 18.8309 21.3646 18.2523 21.5861C17.9405 21.7056 17.7089 21.9727 17.6349 22.2983L17.248 24H14.7517L14.3648 22.2983C14.2908 21.9725 14.0588 21.7052 13.7467 21.5859C13.1682 21.3648 12.628 21.0599 12.1441 20.6819C11.8866 20.4807 11.5469 20.4181 11.2345 20.5142L9.50817 21.0453L8.27989 18.9661L9.58509 17.7954C9.83655 17.5699 9.95715 17.2326 9.90574 16.8988C9.81408 16.3036 9.81408 15.6984 9.90574 15.1032C9.95713 14.7695 9.83662 14.4323 9.58531 14.2068L8.27977 13.0351L9.50817 10.9557L11.2345 11.4868C11.547 11.5829 11.8867 11.5202 12.1443 11.3189C12.6284 10.9406 13.1689 10.6354 13.7478 10.4141C14.06 10.2947 14.292 10.0273 14.3659 9.70129Z" fill="#607D8B"></path></svg></re-icon-settings><!----></button><button _ngcontent-qln-c33="" retooltip="" class="quick-control-panel__item quick-control-panel__item_user"><re-icon-user-menu><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="filled"><g clip-path="url(#clip0_7383_11644)"><path d="M20.3 15.9999C20.3 15.3687 20.8117 14.8571 21.4429 14.8571H26.8572C27.4883 14.8571 28 15.3687 28 15.9999C28 16.6311 27.4883 17.1428 26.8572 17.1428H21.4429C20.8117 17.1428 20.3 16.6311 20.3 15.9999ZM21.4 20.5714C21.4 19.9402 21.9117 19.4285 22.5429 19.4285H26.8572C27.4883 19.4285 28 19.9402 28 20.5714C28 21.2025 27.4883 21.7142 26.8572 21.7142H22.5429C21.9117 21.7142 21.4 21.2025 21.4 20.5714ZM19.2 11.4285C19.2 10.7973 19.7117 10.2856 20.3429 10.2856H26.8572C27.4883 10.2856 28 10.7973 28 11.4285C28 12.0597 27.4883 12.5714 26.8572 12.5714H20.3429C19.7117 12.5714 19.2 12.0597 19.2 11.4285Z" fill="#607D8B"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12ZM6.00131 22C6.0494 20.335 7.41425 19 9.09091 19H14.9091C16.5857 19 17.9506 20.335 17.9987 22H6.00131ZM4 22.0909C4 19.2793 6.27928 17 9.09091 17H14.9091C17.7207 17 20 19.2793 20 22.0909C20 23.1453 19.1453 24 18.0909 24H5.90909C4.85473 24 4 23.1453 4 22.0909Z" fill="#607D8B"></path></g><defs><clippath id="clip0_7383_11644"><rect width="24" height="24" fill="white" transform="translate(4 4)"></rect></clippath></defs></svg></re-icon-user-menu><!----></button><button _ngcontent-qln-c33="" retooltip="" class="quick-control-panel__item quick-control-panel__item_reading-list"><re-icon-reading-list><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" class="filled"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 8C10.7348 8 10.4804 8.10536 10.2929 8.29289C10.1054 8.48043 10 8.73478 10 9V23.2768L15.5039 20.1318C15.8113 19.9561 16.1887 19.9561 16.4961 20.1318L22 23.2768V9C22 8.73478 21.8946 8.48043 21.7071 8.29289C21.5196 8.10536 21.2652 8 21 8H11ZM8.87868 6.87868C9.44129 6.31607 10.2044 6 11 6H21C21.7956 6 22.5587 6.31607 23.1213 6.87868C23.6839 7.44129 24 8.20435 24 9V25C24 25.3565 23.8102 25.686 23.5019 25.8649C23.1936 26.0438 22.8134 26.0451 22.5039 25.8682L16 22.1518L9.49614 25.8682C9.18664 26.0451 8.80639 26.0438 8.49807 25.8649C8.18976 25.686 8 25.3565 8 25V9C8 8.20435 8.31607 7.44129 8.87868 6.87868ZM16 10C16.5523 10 17 10.4477 17 11V13H19C19.5523 13 20 13.4477 20 14C20 14.5523 19.5523 15 19 15H17V17C17 17.5523 16.5523 18 16 18C15.4477 18 15 17.5523 15 17V15H13C12.4477 15 12 14.5523 12 14C12 13.4477 12.4477 13 13 13H15V11C15 10.4477 15.4477 10 16 10Z" fill="#607D8B"></path></svg></re-icon-reading-list><!----></button><button _ngcontent-qln-c33="" retooltip="" class="quick-control-panel__item quick-control-panel__item_one-click"><re-icon-one-click><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" class="stroked"><g clip-path="url(#clip0_5575_37)"><path d="M6 16H9.33333M16 6V9.33333M11.3333 11.3333L8.88889 8.88889M20.6667 11.3333L23.1111 8.88889M11.3333 20.6667L8.88889 23.1111M16 16L26 19.3333L21.5556 21.5556L19.3333 26L16 16Z" stroke="#607D8B" stroke-width="2.22222" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clippath id="clip0_5575_37"><rect width="24" height="24" fill="white" transform="translate(4 4)"></rect></clippath></defs></svg></re-icon-one-click><!----></button><!----></div></div></div></re-sticky-app><!----><style>[_nghost-qln-c33]{--text-blue-blue-secondary: #0a6cc2;--text-base-base-tertiary: #607d8b;--color-new-blue-200: #d9ecfc;--bg-base-quaternary: #eaeef1;--color-black-0: #fff;--bg-base-tertiary: #f7f9f9;--text-base-base-primary: #222c31;--text-base-base-placeholder: #79929d;--line-gray-gray-secondary: #dee4e7;--light-web-feedback-error-secondary: #e45c45;--text-base-base-disabled: #92a6b0;--bg-base-define: #e8f3fc;--text-base-base-secondary: #3b4c55;--text-blue-blue-primary: #2a8bdf;--bg-base-define-blue-hover: #d9ecfc;--color-new-blue-100: #f6fafe;--color-new-blue-100-rgb: 246, 250, 254;--ref-Black-300: #cecece;--light-a-8: rgba(34, 44, 49, .1);--decorative-facebook: #1877f2;--premium-text-text-secondary: #9c7b1e;--color-yellow-premium-700: #ffca31;--rgba-shadow-1: rgba(0, 0, 0, .1);--rgba-shadow-2: rgba(34, 44, 49, .25);--rgba-text-1: rgba(255, 255, 255, .9);--decorative-reverso-blue: #053661;--text-blue-blue-quaternary: #bddef9;--rgba-shadow-3: rgba(0, 0, 0, .14);--rgba-shadow-4: rgba(0, 0, 0, .2);--rgba-shadow-5: rgba(0, 0, 0, .12);--action-secondary-secondary-hovered-2: #E8F3FC}[_nghost-qln-c33]   .quick-control-panel[_ngcontent-qln-c33]{cursor:pointer;z-index:1050;display:flex;padding:3px;box-sizing:border-box;border:1px solid var(--line-gray-gray-secondary);border-right:none;background:var(--color-black-0);box-shadow:0 4px 20px 0 var(--light-a-8);border-radius:8px 0 0 8px;width:40px}[_nghost-qln-c33]   .quick-control-panel__container[_ngcontent-qln-c33]{position:relative;display:flex;flex-direction:column-reverse;align-items:center;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__main-button[_ngcontent-qln-c33]{border:none;background-color:transparent;padding:0;cursor:pointer;display:flex;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__main-button[_ngcontent-qln-c33]     svg{width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__icon[_ngcontent-qln-c33]{width:32px;height:32px;display:flex}[_nghost-qln-c33]   .quick-control-panel__menu-items[_ngcontent-qln-c33]{display:flex;flex-direction:column;position:absolute;opacity:0;transition:all .3s ease;pointer-events:none;background:var(--color-black-0);gap:8px;width:40px;padding:8px 3px 0;bottom:36px;box-sizing:border-box;border-radius:8px 0 0;border-top:1px solid var(--line-gray-gray-secondary);border-left:1px solid var(--line-gray-gray-secondary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]{border-radius:8px;background-color:transparent;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;transform:translateY(10px);opacity:0;padding:0;transition:opacity .3s ease,transform .3s ease;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-user-menu[_ngcontent-qln-c33], [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-settings[_ngcontent-qln-c33], [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-one-click[_ngcontent-qln-c33]{display:flex;width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-user-menu[_ngcontent-qln-c33]     svg, [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-settings[_ngcontent-qln-c33]     svg, [_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]   re-icon-one-click[_ngcontent-qln-c33]     svg{width:32px;height:32px}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]{background-color:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]     svg.filled path{fill:var(--color-black-0)}[_nghost-qln-c33]   .quick-control-panel__item_active[_ngcontent-qln-c33]     svg.stroked path{stroke:var(--color-black-0)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover{background-color:var(--bg-base-tertiary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover     svg.filled path{fill:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:not(   .quick-control-panel__item_active)[_ngcontent-qln-c33]:hover     svg.stroked path{stroke:var(--text-blue-blue-secondary)}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]{border-radius:0 0 0 8px;border-top:1px solid transparent}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__menu-items[_ngcontent-qln-c33]{opacity:1;pointer-events:all}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]{transform:translateY(0);opacity:1}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(1){transition-delay:.1s}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(2){transition-delay:.15s}[_nghost-qln-c33]   .quick-control-panel_expanded[_ngcontent-qln-c33]   .quick-control-panel__item[_ngcontent-qln-c33]:nth-child(3){transition-delay:.2s}</style></template></re-quick-control-panel></div><script src="chrome-extension://onhiacboedfinnofagfgoaanfedhmfab/dist/quick-control-panel/runtime.js" defer=""></script><script src="chrome-extension://onhiacboedfinnofagfgoaanfedhmfab/dist/quick-control-panel/main.js" defer=""></script>
-  <div class="kimi-brand-container">
-    <div class="kimi-brand-close-icon">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.499 3.50216C12.7226 3.72574 12.7226 4.08825 12.499 4.31184L8.81035 8.00029L12.4972 11.6872C12.7208 11.9107 12.7208 12.2733 12.4972 12.4968C12.2736 12.7204 11.9111 12.7204 11.6875 12.4968L8.00066 8.80998L4.31221 12.4986C4.10582 12.705 3.78106 12.7209 3.55646 12.5463L3.50252 12.4986C3.27893 12.2751 3.27893 11.9126 3.50252 11.689L7.19098 8.00029L3.50107 4.31038C3.27748 4.0868 3.27748 3.72429 3.50107 3.5007C3.72465 3.27711 4.08716 3.27711 4.31075 3.5007L8.00066 7.19061L11.6893 3.50216C11.8957 3.29577 12.2205 3.27989 12.4451 3.45453L12.499 3.50216Z" fill="white" fill-opacity="0.84"></path>
-      </svg>
+    @media (max-width: 900px){
+      .hero-grid,.stats,.grid,.two-col{grid-template-columns:1fr}
+      .nav{flex-direction:column; align-items:stretch}
+      .brand{justify-content:flex-start}
+      .navlinks{justify-content:flex-start}
+    }
+    @media (max-width: 560px){
+      .container{width:min(100% - 20px, 1120px)}
+      .hero-card{padding:18px}
+      .hero h2{font-size:1.8rem}
+      .hero-meta{grid-template-columns:1fr}
+      .card,.announcement{padding:18px}
+      .section-title{flex-direction:column; align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo.svg" alt="شعار ثانوية نور المعارف الخاصة" />
+        <div>
+          <h1>ثانوية نور المعارف الخاصة</h1>
+          <p>كفر شمس - الموقع الرسمي للانطلاقة الكبرى</p>
+        </div>
+      </div>
+      <nav class="navlinks" aria-label="التنقل السريع">
+        <a class="pill" href="#about">نبذة</a>
+        <a class="pill" href="#features">المزايا</a>
+        <a class="pill" href="#contact">التواصل</a>
+      </nav>
     </div>
+  </header>
 
-    <a href="https://www.kimi.com/agent" target="_blank" class="kimi-brand-link">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAsHSURBVHgB1ZpJTFRfFsYvlPNYOM8WzjPgFGfBIbIwihuXSi/c9EY6veyFQy9cddC4sHujbFyYaOLfaKKJCUQTo4kKGGOcLUdwpJxRxNfnd+RUHuUroGS+yc199d4dzne+M9x7Ic01XyJSC6RmNTxHGt6HG2pHlFhCrZBaKbVMatT9YcmVWirV6+IVGbNdiqXYOdfZgqdai10LCiZX7jpf2D+t5a4Zt+nO4PwgA0t3NMtGNS0tTasLMNfsrix4KgDT09P1uU+fPrl+gKVdWfBUANpzKBQqBVia+5XXHrluXgSc8zwv/kyR35k93K981+2LgfM/z549uyDd/UGS7IzSJ2e7G/GvGjfy354b+vdyF8qIJO3bo0cPZbGmpiYLLrHVXNeFSygcccP+2diL6mNR9+Y/mY3eSYBR9nr37u1qa2t5VQaDHbWf/OPSd37hb+8A3XN0Y+ODOcABlBIOhyP4YJcH2NLy48eP+DNA379/77otwNryEldXVdHoXa9evVzPnj0VKCYqv8OtBrhr1y4XiUTivysrK93+/ftbPD47O9vt3Lkz8NuePXtcNBp19TVRVxct03c/a2PuR1Wl+3Lp9zV+/vzpvn375r5//66/Bw0apNhalVwfPXrk+UtpaWmLxwo4TyKdF1R2796dNIm7FiR62cnYc+cAbCk43/6yEYjE99QBAwY0+j5mzJjOAZgqc7LtapKtoDp06NDOYbA5cH4GgkD5ATfFrm9cxwFsCXN2Gkisyd5bHTlypN/vFGRGRkbHAWwNc36AiUCNUfzNZ5b+edofYCo+11SVHKet7Fg0oPAMOH4DyACOGzfO69evn4FsX4C5ubltAq6pCjBADRkyxBs4cKA3Z84cP4vtB3D79u1estJW4MxsDeCoUaPi4NoVYHuC86cN80HA8dy/f//E/m0PMBVw+A8MNBcl/WxZS5UTgzdx4kQFlhigeMdetE2L+JzWZMWOMlb8J4CWFPab/hKLxdyECRPc58+fdYPdt29f9+XLFz3wCkDt06YMtqQwRjboXmvXpuJzw4cP15YoKycIZdYXVTseIIXIWlRU1GqAliZox44dqymJFrC0je2lHQrHnaAivuOKi4vdkSNHGh23UimYu4DQVvKimuXr16+dMOokqrqlS5dqv3ZjsLy8XINAQUFBk/34Nn/+/JTXxgyJnmzJRo8e7S1fvtzLysrSXc26deu88ePHtx+DFRUVLi8vT4PAyZMn9bmsrCywLwxeu3ZND8+pFNGNq6+vd3V1dRpcKDD49etXvbIQs/3Vz6WoNX84DmLGmAsaT5poqjCWAOS/hm+qEkhgjyCzYsUKb/HixZ6YprdgwQIvMzMz9SBjC9viiQD5nQycVQJBc8GJfFpYWNjohGDVoiQte05hz5PrCW/z5s3epk2bFBhAZ86c+Qtg0Ok4CJh/ASJXEMDmzoOMQ2gWLykp8ZorREPWo2WcrS0mqNX2nzCI74krqAVYRE3HTrFlz3f1nczeg55TLSR20bq7c+eO27Fjh9u7d2+T/fEtYUd9iogpgDRiMseUKVM0qQtAjaQk+3fv3qnvye7GSfBx6QjLR/8Ow/54QeG9/7cVnDvofbJi83M5i1AUhAYggj579ixw3IwZM/Q6EBCsJ/4WH/vmzRsnkVLTwocPHxTYgwcP3Nu3b52wrTd86fZXGQNiQiduqeyb1VRZZIvFnSXzohx+f/r0SZ/FzN2iRYvcvn37fsub/FYmGkjgWnDw4MEaOadPn+4kLWikJq+K2WuLEtim0S8kwu42gLRBAOy9tf4iOU5bFqEi0LFjx5KCRMswgoD++QF78eJFd/z4cffkyRMFTsgntUybNk3fISO31QDATJnn/v37CgoL4D4UMyYlXbhwwUmEdWkNR484g/6F/QK4ACYROBUmWQOAxmCyMm/ePP4ypLsRwF26dEl9lzURmnnmzp3rqqqqFBiKBSyb7UmTJql/ss7NmzddSMymSOy1DxMgLB0RwID5TTeRST/jQf6Y+I7+TSkFv0EwEjV+iv9hvgQPFM93WtmxKFtm7vQHHCbJTbmZsrSxHtIhJiDDdKIwwMzV/NBMi8qzKcD6UQgeKMnGGHjr2xJ26U8wQRZJ1Ary48eP7tWrV/H9Jetjunfv3o3vVmhhDnb5hiIaru9j6fJXUEVOJbQSkgnNLMZgOrO4P0gkBiJrTQF+VpMFq8TCuhSExcQkr6lf4mvUYcOGKQBM8unTp6oElIhSAcO6jCWNoBD6Co5YSKgtkAkjhFnsHo1TAUnLBIA0EzIhAWMMonUWie/9fOzbbyv211fP9/d0wPGeyEfLOsjz/PlzlQFzw3VIJw8fPozvPWkJOigEhkkPyGAmLYTcDkmYzbt371721KlTtSOaYREzVzRjDDLI8p/Zv7UmPM8mPGMsmJgyrNIXi8ByZAeiwgMCBkgLL168iJ/KzfQomC3j8DnkhV3G0w9gyE/qIEfKdu2vkDxEZFw+H5iQkIv2WMzOWCtXrtSJmYDCAnznG4rhPUxjIijBANguKcjX0PiIESN0PJoHAH15Zn2CBYWTBqlAbq4VBH0wUcA9fvxYE70RwpywDRZyovjv/4ii1UJ3ERpB+9xvsN0BBKaHRhnEOxawKIvD2zbJTBTlEBTMBM1UEYaWsRT6EQlv3bqlc8MYSmKsKYk1TCb8jjlZEwVMnjxZ5yTnYd74J6kEa0EWNg0EHbkb+kdINB/buHFjrvhfhIVwbAbQUY4f6g9Xr15VDQKSgQDFkclRCI3mYAsWaJmHfigA4AQM5kMogGGO1dXVqoANGza469ev69woAd9iPKwAlLUAjiJQNuwQDO0WAIW8fPnSbdmyRZnHKgAuc5fJuwMaFcRWHwuYQjRL3mEwpoMDY3oIx6RyY6yL0o9nObspCLQM4wgBaEAilMyrLGzdutUtXLhQNY8wCIDi7E/OsEJFWECzPsLCHDsYFE4yx2VQGL/xXdtsAFziiMqJ8hry7ZZz585VK0A5fUflLJUhwi9hG8RCMIZGAThr1izdgjEBi6N9FIB5wA5aJwLzDfCMx29hDMFhm28AR2DYQXj6nj17VkHDFH7HOnxDcVRAoTha1kWZzIWCbty4oYBhnDV45vv58+cPyF1PiUZpfwCQv4mXi+azERjB0DCAMYvTp087MWV1cEL1qlWr3KlTp5RZki7bKxYFHBpGOHwGJjF73sMKoOnPOK41Ll++rBqHXSzGoiXsMB/C8y4/P1/nxSIAivKZE4uDBLnT0flkXIUAzzFMIT9A6XBs27Zt+SLQKDQC9Rw58Bt8hAAEAwjJPpDdBgLAHqEcQAiG/wGYDe+yZcvi/xiAIPSnn1kESqQvfZgTk8X8+cY7TC4nJ0ef8S8YX79+vRKA2ZIrbX8q81SsXbs2T0yz1jAFHugOHTq0Xybcib+hLSZGaDQEYMwPFgGKD9CiDNhCy7CDsHKz5U6cOKE5CUERmvNaw79ZafhfvXq1O3z4sAYqi6qsixnzDoUwzvyTZ0yd78zBO1zl9u3bB0S+okQsoSCAZ86cOStns7/ELGeIhiJoh4lZzPIQQQPzNbNbs2aNAiT/4L/4AlbAOHwYYSmYFN9hk5bxgKIv1gHTzEcQwS9hmnzHeDsYMw458F0x7bKjR4/+TTYG/w3C0uyRXO5YIgcPHsyVM1a2CJAlwSUsmg+LzYdFY+ElS5ZossWXEJpDKOYM66JVBYgi8DtMij5EX7kYUs1zBuQbwiYey4wpUVBMLCiGtYibRGXeqMxTeeXKlZMyZ7Qp+f8PFfwmm2H/qgMAAAAASUVORK5CYII=" alt="Kimi" class="kimi-brand-avatar">
-      <span>Kimi Agent</span>
-      <svg width="16" height="16" class="kimi-brand-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2925 8.54311C14.5253 8.30855 14.5247 7.92983 14.2909 7.69611L10.5986 4.00381C10.3643 3.76949 9.98442 3.76949 9.7501 4.00381C9.51579 4.23812 9.51579 4.61802 9.7501 4.85233L12.4181 7.52038H1.86667C1.5353 7.52038 1.26667 7.78901 1.26667 8.12038C1.26667 8.45175 1.5353 8.72038 1.86667 8.72038H12.4255L9.74857 11.4167C9.51511 11.6519 9.51648 12.0318 9.75164 12.2652C9.9868 12.4987 10.3667 12.4973 10.6002 12.2622L14.2925 8.54311Z" fill="white" fill-opacity="0.84"></path>
-      </svg>
-    </a>
-  </div>
-    </body><template id="transover-popup-template"></template><template id="transover-tat-popup-template"></template><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-grid">
+            <div>
+              <div class="eyebrow">الإعلان الرسمي والانطلاقة الكبرى</div>
+              <h2>ثانوية نور المعارف الخاصة في كفر شمس</h2>
+              <p>
+                بسم الله الرحمن الرحيم. إلى أهالينا الكرام في بلدة كفر شمس الأبية، وإلى ربوع وقرى حوران المعطاءة، نعلن
+                قرب فتح باب القبول والتسجيل للعام الدراسي الجديد في الصرح التعليمي الأحدث والأرقى في المنطقة، للمرحلة الثانوية
+                بفرعيها العلمي والأدبي.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#contact">سجل اهتمامك الآن</a>
+                <a class="btn btn-ghost" href="#features">استعرض المزايا</a>
+              </div>
+            </div>
+            <aside class="hero-side" aria-label="ملخص المدرسة">
+              <div class="logo-box">
+                <img src="logo.svg" alt="شعار مدرسة نور المعارف" />
+              </div>
+              <div class="hero-meta">
+                <div class="meta">
+                  <strong>الموقع</strong>
+                  <span>بلدة كفر شمس</span>
+                </div>
+                <div class="meta">
+                  <strong>العنوان الإلكتروني</strong>
+                  <span>noor-almaarif.dirasi.com</span>
+                </div>
+                <div class="meta">
+                  <strong>المرحلة</strong>
+                  <span>الثانوية - العلمي والأدبي</span>
+                </div>
+                <div class="meta">
+                  <strong>الانطلاقة</strong>
+                  <span>قبول وتسجيل قريبًا</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+    <section>
+      <div class="container">
+        <div class="stats" aria-label="أهم المعلومات">
+          <div class="stat">
+            <div class="num">8</div>
+            <div class="label">شعب صفية متكاملة</div>
+          </div>
+          <div class="stat">
+            <div class="num">2</div>
+            <div class="label">فرعان: علمي وأدبي</div>
+          </div>
+          <div class="stat">
+            <div class="num">100%</div>
+            <div class="label">منح تفوق تصل إلى</div>
+          </div>
+          <div class="stat">
+            <div class="num">2</div>
+            <div class="label">قسم مستقل للذكور والإناث</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h3>نبذة ورسالة المدرسة</h3>
+          <p>تعليم منظم، متابعة جادة، وبيئة تحفز على التفوق.</p>
+        </div>
+
+        <div class="announcement">
+          <p class="lead">ثانوية نور المعارف الخاصة: بالعلم والعمل نبني قادة الغد</p>
+          <blockquote>
+            إيماناً منا بأن التعليم هو حجر الأساس لبناء الأمم وصناعة الوعي، ولأن مرحلة الشهادة الثانوية هي المنعطف الأهم
+            والركيزة الأقوى في مسيرة الطالب الأكاديمية، نضع بين أيديكم صرحاً تعليمياً يركز على الجودة، المتابعة، والانضباط
+            والتواصل المستمر مع الأهل.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h3>لماذا تعتبر نور المعارف وجهتكم الأمثل؟</h3>
+          <p>سبع ركائز تجعل المدرسة خياراً واضحاً ومطمئناً.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card feature">
+            <div class="icon">01</div>
+            <div>
+              <h4>بيئة تعليمية نموذجية ومحدودة السعة</h4>
+              <p>تضم المدرسة 8 شعب صفية متكاملة مخصصة حصرياً للمرحلة الثانوية، ما يرفع التركيز والمتابعة المباشرة.</p>
+              <ul>
+                <li>خفض الكثافة داخل القاعات</li>
+                <li>استيعاب أفضل</li>
+                <li>متابعة فردية أوضح</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="icon">02</div>
+            <div>
+              <h4>كادر تدريسي نخبوي لشهادة البكالوريا</h4>
+              <p>مدرسون من صفوة الكفاءات التربوية في المواد العلمية والأدبية مع تدريب على النماذج الامتحانية.</p>
+              <ul>
+                <li>دروس منظمة</li>
+                <li>اختبارات دورية</li>
+                <li>تقوية مكثفة للطلاب</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="icon">03</div>
+            <div>
+              <h4>التحول الرقمي ومواكبة العصر</h4>
+              <p>دمج المناهج الرقمية وأدوات العرض الحديثة مع منصة مساعدة للدعم العلمي المرن.</p>
+              <ul>
+                <li>محتوى رقمي مساعد</li>
+                <li>وسائل عرض حديثة</li>
+                <li>تجربة تعليمية أكثر تفاعلاً</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="icon">04</div>
+            <div>
+              <h4>فصل تام بين الجنسين</h4>
+              <p>أقسام مستقلة تماماً للطلاب والطالبات بما يضمن الخصوصية والتركيز والراحة.</p>
+              <ul>
+                <li>قسم للذكور</li>
+                <li>قسم للإناث</li>
+                <li>تنظيم تربوي واضح</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="icon">05</div>
+            <div>
+              <h4>أوراق عمل تفاعلية ومتابعة مستمرة مع الأهل</h4>
+              <p>نظام أوراق عمل دورية وقنوات تواصل دائمة لإطلاع الأهل على المستوى الأكاديمي والسلوكي.</p>
+              <ul>
+                <li>تقييمات منتظمة</li>
+                <li>تواصل أسري فعال</li>
+                <li>شفافية في المتابعة</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature">
+            <div class="icon">06</div>
+            <div>
+              <h4>كرامة مصانة ومواطنة جامعة</h4>
+              <p>لائحة داخلية صارمة تضمن بيئة تربوية آمنة قائمة على الأخلاق والعدالة والاحترام المتبادل.</p>
+              <ul>
+                <li>انضباط مدرسي</li>
+                <li>عيش مشترك</li>
+                <li>بيئة آمنة ومحترمة</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card feature" style="grid-column:1 / -1">
+            <div class="icon">07</div>
+            <div>
+              <h4>أقساط مرنة وميسرة مع منح تفوق</h4>
+              <p>خط مالي مرن للأقساط السنوية مع دفعات ميسرة، وحسومات خاصة للأخوة، ومنح دراسية تصل إلى 100% للمتفوقين أكاديمياً ومسلكياً.</p>
+              <ul>
+                <li>دفعات ميسرة</li>
+                <li>حسومات تشجيعية للأخوة</li>
+                <li>منح تفوق حتى 100%</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h3>التسجيل والتواصل</h3>
+          <p>معلومات واضحة وسريعة للزائرين وأولياء الأمور.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card contact">
+            <div class="contact-item">
+              <div class="icon">📍</div>
+              <div>
+                <strong>العنوان</strong>
+                <span>بلدة كفر شمس</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">🌐</div>
+              <div>
+                <strong>العنوان الإلكتروني</strong>
+                <span>noor-almaarif.dirasi.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">🎓</div>
+              <div>
+                <strong>المرحلة الدراسية</strong>
+                <span>الثانوية العامة - العلمي والأدبي</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 style="margin:0 0 10px; color:var(--brand); font-size:1.2rem;">رسالة إلى الأهالي</h4>
+            <p style="margin:0 0 12px; color:var(--muted);">
+              نرحب بجميع أولياء الأمور والطلاب الراغبين بالانضمام إلى المدرسة، ونؤكد أن باب القبول والتسجيل سيُفتح قريباً
+              للعام الدراسي الجديد.
+            </p>
+            <div style="background:linear-gradient(135deg, rgba(15,61,62,.08), rgba(217,164,65,.10)); border:1px solid var(--line); border-radius:22px; padding:18px;">
+              <p style="margin:0; font-weight:800; color:var(--brand);">
+                "بإيماننا بأن التعليم هو حجر الأساس، نبني معكم مستقبلًا واعدًا لأبنائكم."
+              </p>
+            </div>
+            <div class="cta-row" style="margin-top:18px">
+              <a class="btn btn-primary" href="https://noor-almaarif.dirasi.com" target="_blank" rel="noreferrer">زيارة الموقع</a>
+              <a class="btn btn-ghost" href="#top">العودة للأعلى</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>ثانوية نور المعارف الخاصة - كفر شمس</div>
+      <div>الموقع الإلكتروني: noor-almaarif.dirasi.com</div>
+    </div>
+  </footer>
+</body>
+</html>
